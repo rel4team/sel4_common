@@ -11,3 +11,6 @@ driver-collect = { git = "https://github.com/rel4team/driver-collect.git", branc
 
 [features]
 ENABLE_SMP = []
+unit-test = [
+    "driver-collect/unit-test",
+]
