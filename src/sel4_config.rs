@@ -51,12 +51,16 @@ pub const PUD_INDEX_OFFSET: usize = PD_INDEX_OFFSET + PD_INDEX_BITS;
 // FIXED: PGD_INDEX_OFFSET should be PUD_INDEX_OFFSET + PUD_INDEX_BITS
 pub const PGD_INDEX_OFFSET: usize = PUD_INDEX_OFFSET + PUD_INDEX_BITS;
 
+// Cache relevant
+pub const L1_CACHE_LINE_SIZE_BITS: usize = 6;
+
 // ASID relevant
 pub const asidLowBits: usize = 9;
 pub const asidHighBits: usize = 7;
 pub const asidInvalid: usize = 0;
 pub const nASIDPools: usize = BIT!(asidHighBits);
 pub const ASID_BITS: usize = asidHighBits + asidLowBits;
+pub const seL4_ASIDPoolBits: usize = 12;
 pub const IT_ASID: usize = 1;
 
 // scheduler relevant
